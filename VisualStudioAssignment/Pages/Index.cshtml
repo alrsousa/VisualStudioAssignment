@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="text-center">
+    <h1 class="display-3">Tom Jobim & Frank Sinatra</h1>
+    <iframe id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/NldPFVKYmiw"
+            title="The Girl From Ipanema - Frank Sinatra & Antônio Carlos Jobim | Concert Collection" frameborder="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe><br />
+    <button onclick="changeWidth()" class="btn-primary">Click to enlarger o or shroten the video</button>
+    <br /><br />
+    <p>Learn more about <a href="https://en.wikipedia.org/wiki/Ant%C3%B4nio_Carlos_Jobim">Antonio Carlos Jobim</a>.</p>
+</div>

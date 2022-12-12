@@ -1,0 +1,46 @@
+﻿@page
+@model PrivacyModel
+@{ ViewData["Title"] = "Privacy Policy";}
+<h1>@ViewData["Title"]</h1>
+
+
+<html>
+<body>
+    <style>
+        .box span{ font-size: 17px; cursor: pointer;}
+        .box p{ height: 15px; overflow: hidden;}
+        .mostrar{ height: 200px !important; transition: 1s;}
+    </style>
+
+    <div class="box">
+
+        <h2>Use this page to detail your site's privacy policy, but remember. We don´t respect your Privacy. <span><b><font color="red">View more</b></font></span></h2>
+        <p>
+            Antônio Carlos Jobim was born in the middle-class district of Tijuca in Rio de Janeiro. His father, Jorge de Oliveira Jobim (São Gabriel, Rio Grande do Sul; 1889–1935), was a writer, diplomat, professor and journalist. 
+            He came from a prominent family, being the great-nephew of José Martins da Cruz Jobim,[3] senator, privy councillor and physician of Emperor Dom Pedro II. While studying medicine in Europe, José Martins added Jobim to his last name, paying homage to the village where his family came from in Portugal, the parish of Santa Cruz de Jovim, Porto.[4][5] His mother, Nilza Brasileiro de Almeida (c. 1910–1989), was of partly Indigenous descent from Northeastern Brazil.
+        </p>
+    </div>
+    <script>
+//        alert('Olá');
+        document.querySelector('.box').addEventListener('click', () => {
+            var conteudo = document.querySelector('.box p');
+            var span = document.querySelector('.box span');
+            if (conteudo.classList.contains('mostrar')) {
+                conteudo.classList.remove('mostrar');
+                span.innerHTML = 'View more';
+            } else {
+                conteudo.classList.add('mostrar');
+                span.innerHTML = 'View less';
+            }
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+
